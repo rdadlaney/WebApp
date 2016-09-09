@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Material test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>  
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <!-- use 0.97.6 js and 0.97.7 css for DROPDOWN and SIDENAV together!!!!!!!!-->
+  
+  
+  <!--Bootstrap CDN
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap2/bootstrap-switch.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.js"></script>-->
+  
+</head>
+<body>
+    
+    <ul id="dropdown" class="dropdown-content">
+         <li><a href="#">Shutdown</a></li>
+         <li>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><a href="#!"><span class="teal-text" style="font-size:16px">Auto</span></a></td> 
+                        <!--CHECK FONT OF AUTO-->
+                        <td><input type="checkbox" class="filled-in" id="auto" checked="checked"/>
+                        <label for="auto"></label></td>
+                    </tr>
+                </tbody>
+            </table>
+         </li>
+         <li><a href="#">Restart</a></li>
+		 <!--<li class="divider"></li>-->
+		 <li><a href="#">Timer</a></li>
+         <li><a href="#">Configure</a></li>
+         <li><a href="#">Update</a></li>
+    </ul>
+    
+  
+    <div class="row">
+        <nav>
+            <div class="nav-wrapper teal lighten-2">
+                <a href="#" class="brand-logo center">Room 1</a>
+                <ul class="right hide-off-med-and-down"><!--hide-off!! very imp for showing in mobile mode-->
+                    <a class=" dropdown-button" href="#" data-activates="dropdown"><i class="material-icons right">more_vert</i></a>    
+                </ul>
+        
+                <ul id="slide-out" class="side-nav fixed"><!--fixed: for showing in mobile mode-->      
+                    <li><a href="#!"class="waves-effect"><span class="teal-text text-darken-2"><center style="font-size:16px">Room 1</center></span></a></li>
+                    <li><a href="#!"class="waves-effect"><span class="teal-text text-darken-2"><center style="font-size:16px">Room 2</center></span></a></li>
+                    <li><a href="#!"class="waves-effect"><span class="teal-text text-darken-2"><center style="font-size:16px">Room 3</center></span></a></li>
+                    <li><a href="#!"class="waves-effect"><span class="teal-text text-darken-2"><center style="font-size:16px">Room 4</center></span></a></li>
+                    <li><a href="#!"class="waves-effect"><span class="teal-text text-darken-2"><center style="font-size:16px">Room 5</center></span></a></li>
+                    <li><a href="#!"class="waves-effect"><span class="teal-text text-darken-2"><center style="font-size:16px">Room 6</center></span></a></li>
+                    <li><a href="#!"class="waves-effect"><span class="teal-text text-darken-2"><center style="font-size:16px">Room 7</center></span></a></li>
+                    <li><a href="#!"class="waves-effect"><span class="teal-text text-darken-2"><center style="font-size:16px">Room 8</center></span></a></li>
+                </ul>
+        
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
+    
+  
+
+<div class="row">
+    <div class="col m2 l3"></div>
+    <div class="col s12 m8 l8">   
+        <div class="card-panel">
+        <table>
+                <tbody>
+                    <tr>
+                        <td><input placeholder="Room 1" id="roomName1" type="text" class="validate"></td>                       
+                        <td><center><div class="switch"><label><input type="checkbox" id="room1"><span class="lever"></span></label></div></center></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="Room 2" id="roomName2" type="text" class="validate"></td> 
+                        <td><div class="switch"><label><input type="checkbox" id="room2"><span class="lever"></span></label></div></td></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="Room 3" id="roomName3" type="text" class="validate"></td> 
+                        <td><div class="switch"><label><input type="checkbox" id="room3"><span class="lever"></span></label></div></td></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="Room 4" id="roomName4" type="text" class="validate"></td> 
+                        <td><div class="switch"><label><input type="checkbox" id="room4"><span class="lever"></span></label></div></td></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="Room 5" id="roomName5" type="text" class="validate"></td> 
+                        <td><div class="switch"><label><input type="checkbox" id="room5"><span class="lever"></span></label></div></td></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="Room 6" id="roomName6" type="text" class="validate"></td> 
+                        <td><div class="switch"><label><input type="checkbox" id="room6"><span class="lever"></span></label></div></td></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="Room 7" id="roomName7" type="text" class="validate"></td> 
+                        <td><div class="switch"><label><input type="checkbox" id="room7"><span class="lever"></span></label></div></td></td>
+                    </tr>
+                    <tr>
+                        <td><input placeholder="Room 8" id="roomName8" type="text" class="validate"></td> 
+                        <td><div class="switch"><label><input type="checkbox" id="room8"><span class="lever"></span></label></div></td></td>
+                    </tr>
+                </tbody>
+            </table>    
+        
+        
+                  
+        <div class="row">
+            <span class="teal-text text-darken-2"><center style="font-size:16px">Fan</center></span>
+        </div> 
+        <div class="row">
+            <p class="range-field">
+                <input type="range" id="test5" min="0" max="5" />
+            </p>
+        </div> 
+        
+        
+        <div class="fixed-action-btn" id="voice" style="bottom: 15px; left: 14px;">
+            <a class="btn-floating btn-large red modal-trigger" onclick="startDictation()" href="#modal1"><i class="material-icons center">mic</i></a>
+        </div>    
+            
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                
+                <p>
+                    <form id="labnol" method="get" action="https://www.google.com/search">
+                    <input type="text" name="q" id="transcript" placeholder="Speak" />              
+                    </form>
+                Listening...
+                </p>
+            </div>
+            <div class="row">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><center>Cancel</center></a>
+            </div>
+        </div>
+        
+        
+        
+        </div>        
+    </div>
+</div>
+           
+        
+        
+
+  <script>
+  $('.button-collapse').sideNav({
+      menuWidth: 220, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+ 
+
+    $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: true, // Displays dropdown below the button
+      alignment: 'right' // Displays dropdown with edge aligned to the left of button
+    }
+  );
+ 
+ 
+    $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+    </script> 
+<script>
+  function startDictation() {
+ 
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+ 
+      var recognition = new webkitSpeechRecognition();
+ 
+      recognition.continuous = false;
+      recognition.interimResults = false;
+ 
+      recognition.lang = "en-US";
+      recognition.start();
+ 
+      recognition.onresult = function(e) {
+        document.getElementById('transcript').value
+                                 = e.results[0][0].transcript;
+        recognition.stop();
+        document.getElementById('labnol').submit();
+      };
+ 
+      recognition.onerror = function(e) {
+        recognition.stop();
+      }
+ 
+    }
+  }
+</script>     
+
+  
+</body>
