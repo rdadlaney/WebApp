@@ -166,6 +166,75 @@
         </div>        
     </div>
 </div>
+
+    <!--
+          Shutdown modal STARTS
+        -->
+        <div id="shutdownModal" class="modal modal-fixed-footer">
+          <div class="modal-content">
+           <h4 style="color: red">Alert!</h4>
+           <div class="divider"></div>
+           <p style="color: black">This will shutdown S.M.A.R.T system completely and all appliances connected to it. This will turn OFF all electrical appliances in your home which may cause undesirable situation. To restart the system you need to manually power-reset every S.M.A.R.T node in all your rooms. Shutdown the system, only if you know what you're doing!
+           </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Abort</a>
+            <a href="#shutdownPreloadModal" class="modal-action modal-close waves-effect waves-red btn red darken-3 modal-trigger" onclick="setTimeout(closeTab, 7000)">Shutdown anyway</a>
+          </div>
+        </div>
+        <!--
+          Shutdown modal ENDS
+        -->
+
+        <!-- system update modal START -->
+          <div id="otaModal" class="modal">
+            <div class="modal-content">
+              <h5 style="color: teal">Checking for system updates...</h5>
+               <div class="progress">
+                <div class="indeterminate"></div>
+              </div>
+            </div>
+          </div>
+        <!-- system update modal ENDS  -->
+
+        <!-- RESTART modal STARTS-->
+        <div id="restartModal" class="modal modal-fixed-footer">
+          <div class="modal-content">
+           <h4 style="color: teal">Restart?</h4>
+           <div class="divider"></div>
+           <p style="color: black">This will restart the automation system. It may take a minute or two. All appliances connceted to system will be turned OFF and non-operational untill system starts again. 
+           </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Abort</a>
+            <a href="#restartPreloadModal" class="modal-action modal-close waves-effect waves-teal btn modal-trigger" onclick="setTimeout(reloadWindow, 60*1000)">Restart</a>
+          </div>
+        </div>
+        <!-- RESTART modal ENDS  -->
+
+        <!-- Restart preloader STARTS -->
+        <div id="restartPreloadModal" class="modal">
+            <div class="modal-content">
+              <h5 style="color: teal">S.M.A.R.T is restarting...</h5>
+               <div class="progress">
+                <div class="indeterminate"></div>
+              </div>
+              <p style="color: black">This page will refresh in a minute.</p>
+            </div>
+          </div>
+        <!-- Restart preloader ENDS   -->
+
+        <!-- shutdown preloader ENDS   -->
+        <div id="shutdownPreloadModal" class="modal">
+            <div class="modal-content">
+              <h5 style="color: red">S.M.A.R.T is shutting down...</h5>
+               <div class="progress red lighten-5">
+                <div class="indeterminate red lighten-1"></div>
+              </div>
+              <p style="color: black">You will be logged out soon.</p>
+            </div>
+          </div>
+          <!-- shutdown preloader ENDS   -->
            
   <!-- TimerModal start -->          
     <div id="timerModal1" class="modal">
